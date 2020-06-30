@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Chat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Live Chat</h1>
+      <h4>Odaberi sobu za pričanje:</h4>
+
+      <div class="buttons">
+        <button class="general" id="general">#općenito</button>
+        <button class="gaming" id="gaming">#gejming</button>
+        <button class="music" id="music">#glazba</button>
+        <button class="sport" id="sport">#sport</button>
+      </div>
+
+      <ul class="chat"></ul>
+
+      <form class="form-chat">
+        <label for="mess">Tvoja poruka:</label>
+        <input type="text" name="mess"/ required>
+        <input type="submit" value="pošalji" />
+      </form>
+
+      <form class="form-name">
+        <label for="name">Obnovi ime:</label>
+        <input type="text" name="name" />
+        <input type="submit" value="obnovi" />
+      </form>
+
+      <div class="update-name"></div>
+    </div>
+
+    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: 'AIzaSyAHHqq5wY1DkjuUVnpVtDEJBr_D0HVgI_c',
+        authDomain: 'live-chat-9e4fb.firebaseapp.com',
+        databaseURL: 'https://live-chat-9e4fb.firebaseio.com',
+        projectId: 'live-chat-9e4fb',
+        storageBucket: 'live-chat-9e4fb.appspot.com',
+        messagingSenderId: '277537140435',
+        appId: '1:277537140435:web:00d257f06aed4ddd956e26',
+        measurementId: 'G-JRFY2GQQ37',
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+      //firebase.analytics();
+    </script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

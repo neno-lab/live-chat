@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.container {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  /*background-color: #f4eeff;*/
+}
+
+button,
+input[type='submit'] {
+  background-color: rgb(110, 182, 255);
+  color: #eeedec;
+  font-family: 'Rubik', sans-serif;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  height: 50px;
+  width: 150px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  margin-top: -15px;
+}
+
+.general,
+.gaming,
+.music,
+.sport {
+  flex: 1 1 auto;
+  margin-right: 10px;
+}
+
+input[type='text'] {
+  box-sizing: border-box;
+  width: 70%;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  padding-left: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 5px;
+  border: #c0c0c0 solid 1px;
+}
+
+input[type='text']:focus {
+  outline: none !important;
+  border: rgb(153, 204, 255) solid 1px;
+  box-shadow: 0 0 10px #719ece;
+}
+
+input[type='submit'] {
+  box-sizing: border-box;
+  width: 10%;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 5px;
+  border: rgb(110, 182, 255) solid 1px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  border: 1px solid #c0c0c0;
+  height: 56px;
+  border-radius: 3px;
+  margin-right: 40px;
+  padding-top: 15px;
+}
+
+li div {
+  text-align: left;
+  padding-left: 15px;
+}
+
+span,
+.message {
+  font-size: 20px;
+}
+
+span {
+  font-weight: 700;
+}
+
+.time {
+  padding-top: 4px;
+  font-size: 14px;
+  color: #b0b0b0;
+}
+
+.update-name {
+  text-align: center;
+  margin: 20px auto;
+}
